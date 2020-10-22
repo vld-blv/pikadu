@@ -2,12 +2,17 @@
   box-sizing: border-box;
 }
 
-.body {
+body {
   font-family: sans-serif;
+  background: #e5e5e5;
 }
 
 .header {
   background: #fa8c16;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+  margin-bottom: 30px;
 }
 
 .header-nav {
@@ -31,12 +36,15 @@
   list-style: none;
 }
 
+.header-menu-item:not(:last-child) {
+  margin-right: 15px;
+}
+
 .header-menu-link {
   text-decoration: none;
   font-size: 14px;
   line-height: 22px;
   color: #fafafa;
-  margin-right: 15px;
 }
 
 .input-group {
@@ -86,4 +94,125 @@ search-input::placeholder {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.content {
+  max-width: 1200px;
+  width: 90%;
+  margin: auto;
+}
+
+.posts {
+  max-width: 800px;
+}
+
+.post {
+  background-color: #fff;
+  border: 1px solid #e8e8e8;
+  margin-bottom: 30px;
+}
+
+.post-body {
+  padding: 35px 35px 0;
+}
+
+.post-title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.post-text {
+  color: #262626;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.tags {
+  margin-bottom: 22px;
+}
+
+.tag {
+  color: #bfbfbf;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  text-decoration: none;
+}
+
+.tag:not(:last-child) {
+  margin-right: 10px;
+}
+
+.post-footer {
+  background: #fafafa;
+  border-top: 1px solid #e8e8e8;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 13px 35px;
+}
+
+.post-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.post-button {
+  background-color: transparent;
+  border: none;
+  color: #8c8c8c;
+  display: flex;
+  align-items: center;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+  cursor: pointer;
+}
+
+.post-button:not(:last-child) {
+  margin-right: 19px;
+}
+
+.post-button .icon {
+  fill: #8c8c8c;
+  width: 20px;
+  height: 20px;
+}
+
+.icon-likes,
+.icon-comments {
+  margin-right: 5px;
+}
+
+.post-author {
+  display: flex;
+  align-items: center;
+  text-align: right;
+}
+
+.author-username {
+  display: block;
+  color: #8c8c8c;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+  text-decoration: none;
+}
+
+.publish-time {
+  color: #bfbfbf;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.author-avatar {
+  width: 34px;
+  height: 34px;
+  border-radius: 4px;
+  margin-left: 10px;
 }

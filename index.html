@@ -1,35 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pikadu</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pikadu</title>
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
-</head>
-
-<body>
-  <header class="header">
-    <div class="header-wrapper">
-      <a href="/" class="header-logo"><img class="header-logo-image" src="img/logo.svg" alt="logo">
-      </a>
-      <nav class="header-nav">
-        <ul class="header-menu">
-          <li class="header-menu-item"><a href="#" class="header-menu-link">Свежее</a></li>
-          <li class="header-menu-item"><a href="#" class="header-menu-link">Лучшее</a></li>
-          <li class="header-menu-item"><a href="#" class="header-menu-link">Горячее</a></li>
-          <li class="header-menu-item"><a href="#" class="header-menu-link">Подписки</a></li>
-        </ul>
-      </nav>
-      <div class="input-group search">
-        <input type="search" class="search-input" placeholder="Поиск по сайту">
-        <button class="search-button">
-          <img src="img/search.svg" alt="search-icon" class="search-icon">
-        </button>
+  <body>
+    <header class="header">
+      <div class="header-wrapper">
+        <a href="/" class="header-logo"
+          ><img class="header-logo-image" src="img/logo.svg" alt="logo" />
+        </a>
+        <nav class="header-nav">
+          <ul class="header-menu">
+            <li class="header-menu-item">
+              <a href="#" class="header-menu-link">Свежее</a>
+            </li>
+            <li class="header-menu-item">
+              <a href="#" class="header-menu-link">Лучшее</a>
+            </li>
+            <li class="header-menu-item">
+              <a href="#" class="header-menu-link">Горячее</a>
+            </li>
+            <li class="header-menu-item">
+              <a href="#" class="header-menu-link">Подписки</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="input-group search">
+          <input
+            type="search"
+            class="search-input"
+            placeholder="Поиск по сайту"
+          />
+          <button class="search-button">
+            <img src="img/search.svg" alt="search-icon" class="search-icon" />
+          </button>
+        </div>
       </div>
-    </div>
-  </header>
-</body>
+    </header>
 
+    <div class="content">
+      <main class="posts">
+        <section class="post">
+          <div class="post-body">
+            <h2 class="post-title">Заголовок поста</h2>
+            <p class="post-text">
+              Далеко-далеко за словесными горами в стране гласных, и согласных
+              живут рыбные тексты. Не правилами сих предложения моей языкового
+              повстречался агентство образ напоивший безопасную жизни деревни,
+              запятой буквоград единственное имеет одна текстов пор, букв, текст
+              вопроса lorem журчит. Продолжил имени взгляд букв эта силуэт сбить
+              снова даль агентство если! Lorem дал вскоре не даже продолжил
+              подпоясал пустился имеет безорфографичный вдали путь текстами
+              предупреждал сих гор жаренные, свое большой! Своего буквесобрал
+              оксмокс переписывается курсивных, знаках использовало речью
+              безорфографичный не пояс правилами пор страну! Себя языком имеет
+              одна ты продолжил взгляд сбить сих от всех домах снова, имени букв
+              рукопись деревни, добезорфографичный оксмокс точках. Курсивных
+              снова моей всемогущая по всей ее текстами не страну путь большого
+              которой она, однажды агентство предложения алфавит букв своих себя
+              обеспечивает большой переписали там от всех? Ручеек он
+              предупредила великий взгляд парадигматическая запятой но первую,
+              безопасную щеке повстречался маленькая продолжил домах моей толку.
+              Бросил живет себя всеми вскоре злых назад запятых пор то своих!
+              Однажды безопасную маленькая имеет послушавшись запятых пор, она
+              инициал. Приставка о прямо предупреждал текста родного, однажды
+              лучше города рукописи, свой то большой! Имени коварных мир
+              курсивных, на берегу парадигматическая вдали? Вопрос, ты океана
+              своих букв толку не которое скатился, семантика собрал
+              парадигматическая взгляд. Дороге точках продолжил всемогущая!
+            </p>
+            <div class="tags">
+              <a href="#" class="tag">#свежее</a>
+              <a href="#" class="tag">#горячее</a>
+              <a href="#" class="tag">#моё</a>
+              <a href="#" class="tag">#случайность</a>
+            </div>
+            <!-- /.tags -->
+          </div>
+          <!-- /.post-body -->
+          <div class="post-footer">
+            <div class="post-buttons">
+              <button class="post-button likes">
+                <svg class="icon icon-likes">
+                  <use xlink:href="img/icons.svg#likes"></use>
+                </svg>
+                <span class="likes-counter">26</span>
+              </button>
+              <button class="post-button comments">
+                <svg class="icon icon-comments">
+                  <use xlink:href="img/icons.svg#comments"></use>
+                </svg>
+                <span class="comments-counter">157</span>
+              </button>
+              <button class="post-button saves">
+                <svg class="icon">
+                  <use xlink:href="img/icons.svg#saves"></use>
+                </svg>
+              </button>
+              <button class="post-button shares">
+                <svg class="icon">
+                  <use xlink:href="img/icons.svg#shares"></use>
+                </svg>
+              </button>
+            </div>
+            <!-- /.post-buttons -->
+            <div class="post-author">
+              <div class="author-about">
+                <a href="#" class="author-username">Yji237</a>
+                <span class="publish-time">5 минут назад</span>
+              </div>
+              <a href="" class="author-link"
+                ><img
+                  src="img/avatar.jpeg"
+                  alt="avatar"
+                  class="author-avatar"
+                />
+              </a>
+            </div>
+            <!-- /.post-author -->
+          </div>
+          <!-- /.post-footer -->
+        </section>
+
+        <section class="post">
+          <div class="post-body">
+            <h2 class="post-title">Заголовок поста</h2>
+            <p class="post-text">
+              Далеко-далеко за словесными горами в стране гласных, и согласных
+              живут рыбные тексты. Не правилами сих предложения моей языкового
+              повстречался агентство образ напоивший безопасную жизни деревни,
+              запятой буквоград единственное имеет одна текстов пор, букв, текст
+              вопроса lorem журчит. Продолжил имени взгляд букв эта силуэт сбить
+              снова даль агентство если! Lorem дал вскоре не даже продолжил
+              подпоясал пустился имеет безорфографичный вдали путь текстами
+              предупреждал сих гор жаренные, свое большой! Своего буквесобрал
+              оксмокс переписывается курсивных, знаках использовало речью
+              безорфографичный не пояс правилами пор страну! Себя языком имеет
+              одна ты продолжил взгляд сбить сих от всех домах снова, имени букв
+              рукопись деревни, добезорфографичный оксмокс точках. Курсивных
+              снова моей всемогущая по всей ее текстами не страну путь большого
+              которой она, однажды агентство предложения алфавит букв своих себя
+              обеспечивает большой переписали там от всех? Ручеек он
+              предупредила великий взгляд парадигматическая запятой но первую,
+              безопасную щеке повстречался маленькая продолжил домах моей толку.
+              Бросил живет себя всеми вскоре злых назад запятых пор то своих!
+              Однажды безопасную маленькая имеет послушавшись запятых пор, она
+              инициал. Приставка о прямо предупреждал текста родного, однажды
+              лучше города рукописи, свой то большой! Имени коварных мир
+              курсивных, на берегу парадигматическая вдали? Вопрос, ты океана
+              своих букв толку не которое скатился, семантика собрал
+              парадигматическая взгляд. Дороге точках продолжил всемогущая!
+            </p>
+            <div class="tags">
+              <a href="#" class="tag">#свежее</a>
+              <a href="#" class="tag">#горячее</a>
+              <a href="#" class="tag">#моё</a>
+              <a href="#" class="tag">#случайность</a>
+            </div>
+            <!-- /.tags -->
+          </div>
+          <!-- /.post-body -->
+          <div class="post-footer">
+            <div class="post-buttons">
+              <button class="post-button likes">
+                <svg class="icon icon-likes">
+                  <use xlink:href="img/icons.svg#likes"></use>
+                </svg>
+                <span class="likes-counter">26</span>
+              </button>
+              <button class="post-button comments">
+                <svg class="icon icon-comments">
+                  <use xlink:href="img/icons.svg#comments"></use>
+                </svg>
+                <span class="comments-counter">157</span>
+              </button>
+              <button class="post-button saves">
+                <svg class="icon">
+                  <use xlink:href="img/icons.svg#saves"></use>
+                </svg>
+              </button>
+              <button class="post-button shares">
+                <svg class="icon">
+                  <use xlink:href="img/icons.svg#shares"></use>
+                </svg>
+              </button>
+            </div>
+            <!-- /.post-buttons -->
+            <div class="post-author">
+              <div class="author-about">
+                <a href="#" class="author-username">Yji237</a>
+                <span class="publish-time">5 минут назад</span>
+              </div>
+              <a href="" class="author-link"
+                ><img
+                  src="img/avatar.jpeg"
+                  alt="avatar"
+                  class="author-avatar"
+                />
+              </a>
+            </div>
+            <!-- /.post-author -->
+          </div>
+          <!-- /.post-footer -->
+        </section>
+      </main>
+      <!-- /.posts -->
+
+      <aside class="sidebar"></aside>
+      <!-- /.sidebar -->
+    </div>
+    <!-- /.content -->
+  </body>
 </html>
